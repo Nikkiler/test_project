@@ -61,7 +61,7 @@ export async function getSession(): Promise<SessionPayload | null> {
 
 /** Set the session cookie on a Response object. */
 export function buildSessionCookie(token: string): string {
-  const secure = process.env.NODE_ENV === "production" ? "; Secure" : "";
+  const secure = process.env.REQUIRE_HTTPS === "true" ? "; Secure" : "";
   return `${COOKIE}=${token}; HttpOnly; SameSite=Lax; Max-Age=${MAX_AGE_SECONDS}; Path=/${secure}`;
 }
 
