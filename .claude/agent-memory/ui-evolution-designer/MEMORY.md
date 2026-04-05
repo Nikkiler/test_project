@@ -1,0 +1,1 @@
+- [Design System — Chatroom App](project_design_system.md) — Full color tokens, typography, glass surface patterns, animation classes, and component notes from the futuristic redesign
